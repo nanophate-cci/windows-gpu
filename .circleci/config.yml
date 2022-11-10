@@ -1,0 +1,8 @@
+version: 2.1
+
+jobs:
+  build:
+    machine: 
+      image: windows-server-2019-nvidia:stable
+    steps:
+      - run: '&"C:\Program Files\NVIDIA Corporation\NVSMI\nvidia-smi.exe"'
